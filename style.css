@@ -1,0 +1,19 @@
+*{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:#0b0d08;}
+  body{font-family:'Space Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased;}
+  ::selection{background:#aaff15;color:#0b0d08;}
+  img{display:block;}
+  button{font-family:inherit;}
+  @keyframes maroCue{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,9px)}}
+  @keyframes maroSpin{to{transform:rotate(360deg)}}
+  @keyframes mRed{0%{opacity:1}44%{opacity:1}50%{opacity:0}94%{opacity:0}100%{opacity:1}}
+  @keyframes mMid{0%{opacity:0}44%{opacity:0}50%{opacity:1}94%{opacity:1}100%{opacity:0}}
+  @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+  @keyframes hop{0%,100%{transform:translateY(0)}30%{transform:translateY(-7px)}55%{transform:translateY(0)}70%{transform:translateY(-3px)}}
+  @keyframes floatA{0%,100%{transform:rotate(-6deg) translateY(0)}50%{transform:rotate(-6deg) translateY(-16px)}}
+  @keyframes floatB{0%,100%{transform:rotate(5deg) translateY(0)}50%{transform:rotate(5deg) translateY(-13px)}}
+  @keyframes floatC{0%,100%{transform:rotate(-3deg) translateY(0)}50%{transform:rotate(-3deg) translateY(-18px)}}
+  @keyframes hopPause{0%,18%{transform:translateY(0)}4%{transform:translateY(-12px)}8%{transform:translateY(0)}11%{transform:translateY(-6px)}14%{transform:translateY(0)}100%{transform:translateY(0)}}
+  image-slot{pointer-events:none !important;}
+  .hoverswap-img{opacity:0;transition:opacity .45s ease;}
+  .hoverswap-wrap:hover .hoverswap-img{opacity:1;}
